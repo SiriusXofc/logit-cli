@@ -12,6 +12,12 @@ AI-powered changelog generator for GitHub repositories. `logit` fetches commits,
 npm install -g logit-cli
 ```
 
+Until the npm package is published, install directly from GitHub:
+
+```bash
+npm install -g github:SiriusXofc/logit-cli
+```
+
 Or run it locally from this repository:
 
 ```bash
@@ -28,6 +34,12 @@ logit generate --repo facebook/react --since 2024-01-01 --format markdown --lang
 ```
 
 Without flags, `logit` opens an interactive flow that detects the current GitHub repo when possible. By default it uses the hosted Logit API, so users do not need a Groq key to get started.
+
+Hosted API:
+
+```text
+https://logit-cli.vercel.app/api/generate
+```
 
 ## Commands
 
@@ -146,3 +158,5 @@ The package exposes a `logit` binary through `dist/index.js`.
 pnpm build
 npm publish
 ```
+
+The GitHub repository is public at [SiriusXofc/logit-cli](https://github.com/SiriusXofc/logit-cli).
