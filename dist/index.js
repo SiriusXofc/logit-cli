@@ -821,6 +821,7 @@ var package_default = {
   scripts: {
     build: "tsup",
     dev: "tsup --watch",
+    prepare: "npm run build",
     start: "node dist/index.js",
     typecheck: "tsc --noEmit",
     "vercel-build": "pnpm build"
