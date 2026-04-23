@@ -12,10 +12,10 @@ AI-powered changelog generator for GitHub repositories. `logit` fetches commits,
 npm install -g logit-cli
 ```
 
-Until the npm package is published, install directly from GitHub:
+Until the npm package is published, install the GitHub release tarball:
 
 ```bash
-npm install -g github:SiriusXofc/logit-cli
+npm install -g https://github.com/SiriusXofc/logit-cli/releases/download/v1.0.0/logit-cli-1.0.0.tgz
 ```
 
 Or run it locally from this repository:
