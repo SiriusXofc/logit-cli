@@ -1,0 +1,58 @@
+{
+  "name": "logit-cli",
+  "version": "1.0.0",
+  "description": "AI-powered changelog generator for developers",
+  "author": "Logit",
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "changelog",
+    "git",
+    "github",
+    "groq",
+    "ai",
+    "cli"
+  ],
+  "bin": {
+    "logit": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "vercel-build": "pnpm build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.1.1",
+    "boxen": "^7.1.1",
+    "chalk": "^5.3.0",
+    "clipboardy": "^4.0.0",
+    "commander": "^12.1.0",
+    "conf": "^12.0.0",
+    "figlet": "^1.8.0",
+    "groq-sdk": "^0.9.1",
+    "inquirer": "^9.3.7",
+    "marked": "^13.0.3",
+    "marked-terminal": "^7.2.0",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.7.0",
+    "@types/inquirer": "^9.0.9",
+    "@types/node": "^20.17.10",
+    "@vercel/node": "^5.7.13",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}
