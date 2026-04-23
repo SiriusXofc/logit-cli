@@ -813,11 +813,6 @@ var package_default = {
   bin: {
     logit: "./dist/index.js"
   },
-  files: [
-    "dist",
-    "README.md",
-    "LICENSE"
-  ],
   scripts: {
     build: "tsup",
     dev: "tsup --watch",
